@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MernokPasswordCreator.Properties
+namespace MernokPasswords.Properties
 {
 
 
