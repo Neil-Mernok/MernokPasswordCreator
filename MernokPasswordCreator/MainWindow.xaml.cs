@@ -84,8 +84,9 @@ namespace MernokPasswords
                     creatorUID = 45,
                     requestName = "MERNOK",
                     requesterUID = 1,
-                    Password = PasswordCreator.PassWordCreate(45,"NEIL",1,"MERNOK")
-                };
+                    Password = PasswordCreator.PassWordCreate(45,"NEIL",1,"MERNOK"),
+                    AccessLevel = (byte)(PasswordCreator.AccessLevel_enum)Enum.Parse(typeof(PasswordCreator.AccessLevel_enum), "Mernok_Engineer")
+            };
 
                 mernokPasswords.Add(AdminPass);
                 mernokPasswordFile.mernokPasswordList = mernokPasswords;

@@ -114,7 +114,7 @@ namespace MernokPasswords
         public string PassWordCreate(uint UIDr, string Requester, uint UIDc, string Creator)
         {
             string Password = "";
-            Password = UIDr.ToString("X") + "$" + Requester + "%" + Creator + "#" + UIDc.ToString("X") + AccessLevel.ToString();
+            Password = UIDr.ToString("X") + "$" + Requester + "%" + Creator + "#" + UIDc.ToString("X") + ">" + AccessLevel.ToString();
             byte[] ba = Encoding.Default.GetBytes(Password);
             var hexString = BitConverter.ToString(ba);
             hexString = hexString.Replace("-", "");

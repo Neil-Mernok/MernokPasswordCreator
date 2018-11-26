@@ -13,7 +13,7 @@ namespace MernokPasswords
         public string CreatorName;
         public uint creatorUID;
         public string Password;
-        public string AccessLevel;
+        public byte AccessLevel;
     }
 
     public class MernokPasswordFile
